@@ -1,13 +1,20 @@
 const {User} = require("./User");
+const path = require("path");
 
 const user = new User("Felipe");
 
 const express = require("express");
 const app = express();
 
+app.set("views", path.join(__dirname, "html"));
+app.set("view engine", "ejs");
+
+app.use(express.static(path.join(__dirname, "html")));
+
+
 // exibição da página inicial
 app.get("/", function(req, res){
-    res.sendFile(__dirname + "/html/index.html");
+    res.render("index");
 });
 
 // conexão com banco de dados
