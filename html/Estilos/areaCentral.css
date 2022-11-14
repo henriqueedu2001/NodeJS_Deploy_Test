@@ -1,0 +1,219 @@
+:root{
+    --back_grande: #131726;
+    --back_caixa: rgb(6, 11, 20);
+    --form_color: black;
+    --form_border: #686868;
+    --form_text: #cef3f5;
+    --link_color: rgb(19, 159, 214);
+    --ultimo-width: 700px;
+    --ultimo-height: 400px;
+    --destaque-width: 280px;
+    --destaque-height: 350px;
+    --post-margin: 10px;
+}
+
+@keyframes abrir{
+    from{
+        height: 0px;
+        color: var(--back_caixa);
+        opacity: 0;
+    }
+    to{
+        height: 400px;
+        color: var(--form_text);
+        opacity: 1;
+    }
+}
+
+@keyframes fechar{
+    from{
+        height: 400px;
+        color: var(--form_text);
+        opacity: 1;
+    }
+    to{
+        height: 0px;
+        color: var(--back_caixa);
+        opacity: 0;
+    }
+}
+
+body{
+    background-image: linear-gradient(to right, #0f2027, #12252c,
+     #152931, #192e37, #1c333c,
+      #1e3741, #203c47, #22404c,
+       #244553, #274959, #294e60, #2c5367);
+       height: 1000px;
+}
+
+.postSecreto{
+    display: block;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    width: 980px;
+    height: 0px;
+    padding: 30px;
+    background-color: var(--back_caixa);
+    color: var(--form_text);
+    margin-bottom: -200px;
+    margin-left: -490px;
+    border-radius: 20px;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 0;
+}
+
+#block{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+}
+
+#logo{
+    height: 60px;
+    padding-right: 20px;
+    background-color: var(--back_grande);
+}
+
+#logo:hover{
+    cursor: pointer;
+    background-color: var(--back_grande);
+}
+
+#menus{
+    list-style-type: none;
+    color: var(--form_text);
+    overflow: hidden;
+    background-color: var(--back_grande);
+}
+
+#menus li{
+    float: left;
+    height: 60px;
+    padding: 55px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+#menus li a:link{
+    text-decoration: none;
+    color: var(--form_text) !important;
+}
+
+#menus li a:visited{
+    text-decoration: none;
+    color: var(--form_text) !important;
+}
+
+#menus li:hover{
+    text-decoration: none;
+    background-color: var(--form_border);
+    cursor: pointer;
+}
+
+#flex{
+    display: flex;
+    flex-direction: row;
+    overflow: wrap;
+    margin: auto;
+    width: calc(var(--destaque-width) + var(--ultimo-width) + 4 * var(--post-margin) + 140px);
+    background-color: rgba(15, 32, 39, 0.3);
+    border-radius: 10px;
+}
+
+#nome-post{
+    color: var(--form_text);
+    margin: 20px;
+    font-size: 45px;
+}
+
+#ultimo{
+    float: left;
+    width: var(--ultimo-width);
+    height: var(--ultimo-height);
+    color: var(--form_text);
+    font-size: 20px;
+    text-align: left;
+    vertical-align: baseline;
+    background-image: url(../Imagens/USP.jfif);
+}
+
+#ultimo:hover{
+    position: relative;
+    width: calc(var(--ultimo-width) + 2 * var(--post-margin));
+    height: calc(var(--ultimo-height) + 2 * var(--post-margin));
+    margin: 0px;
+}
+
+#post{
+    width: calc(var(--ultimo-width) + var(--destaque-width) + 4 * var(--post-margin));
+    margin-top: 1%;
+}
+
+.setas{
+    width: 70px;
+    margin-top: var(--destaque-height);
+    cursor: pointer;
+}
+
+.post{
+    border-radius: 20px;
+    background-color: var(--back_caixa);
+    margin: var(--post-margin);
+    cursor: pointer;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.post:hover{
+    opacity: 1;
+}
+
+.destaque{
+    float: right;
+    width: var(--destaque-width);
+    height: var(--destaque-height); 
+    color: var(--form_text);
+    font-size: 20px;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+.destaque:hover{
+    position: relative;
+    margin: 0px;
+    width: calc(var(--destaque-width) + 2 * var(--post-margin));
+    height: calc(var(--destaque-height) + 2 * var(--post-margin));
+}
+
+.anteriores{
+    float: left;
+    width: calc(var(--ultimo-width)/2 - var(--post-margin));
+    height: calc(2 * var(--destaque-height) - var(--ultimo-height));
+    color: var(--form_text);
+    font-size: 20px;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+.anteriores:hover{
+    position: relative;
+    margin: 0px;
+    width: calc(var(--ultimo-width)/2 - var(--post-margin) + 2 * var(--post-margin));
+    height: calc(2 * var(--destaque-height) - var(--ultimo-height) + 2 * var(--post-margin));
+}
+
+.textos{
+    position: relative;
+    background-color: black;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}

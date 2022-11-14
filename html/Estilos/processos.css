@@ -1,0 +1,84 @@
+:root{
+    --back_grande: #131726;
+    --back_caixa: rgb(6, 11, 20);
+    --form_color: black;
+    --form_border: #686868;
+    --form_text: #cef3f5;
+    --link_color: rgb(19, 159, 214);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #131726 !important;
+    height: 100%;
+    width: 100%;
+}
+
+.nav_tabs{
+    width: 1500px;
+    height: 900px;
+    margin: 30px auto;
+    position: relative; 
+    border-radius: 30px;
+    background-color: black;
+    
+}
+
+.nav_tabs ul{
+    list-style: none;
+    float: left;
+}
+
+.nav_tabs ul li{
+    float: left;
+    display: block !important;
+}
+
+.nav_tabs label{
+    width: 200px;
+    padding: 10px;
+    font-weight: 600;
+    display: block;
+    color: #686868;
+    border: 1px solid #686868;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 30px;
+    margin: 20px 5px 10px 0px;
+}
+ 
+.rd_tabs:checked ~ label{
+    color: #cef3f5;
+    font-weight: 600;
+    border: 1px solid #cef3f5;
+}
+
+.rd_tabs{
+    display: none;
+}
+
+.content{
+    border: 1px solid #686868 !important;
+    background-color: black;
+    color: #686868;
+    width: 800px;
+    height: 120px;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    font-weight: 600;
+    font-size: x-large;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#conteiner-flex{
+    display: flex;
+    clear: left;
+    flex-direction: column;
+    margin-left: 30px;
+}

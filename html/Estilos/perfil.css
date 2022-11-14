@@ -1,0 +1,203 @@
+:root{
+    --back_grande: #131726;
+    --back_caixa: rgb(6, 11, 20);
+    --form_color: black;
+    --form_border: #686868;
+    --form_text: #cef3f5;
+    --link_color: rgb(19, 159, 214);
+}
+
+#logo{
+    width: 60px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, #0f2027, #12252c,
+     #152931, #192e37, #1c333c,
+      #1e3741, #203c47, #22404c,
+       #244553, #274959, #294e60, #2c5367) !important; 
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    width: 1000px;
+    height: 500px;
+    margin: 30px auto;
+    border-radius: 30px;
+    background-color: rgba(15, 32, 39, 0.3);
+}
+
+.box2{
+    width: 1000px;
+    height: 800px;
+    margin: 30px auto;
+    border-radius: 30px;
+}
+
+.boxposts{
+    float: left;
+    width: 650px;
+    height: 770px;
+    border-radius: 30px;
+    background-color: rgba(15, 32, 39, 0.3);
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.boxop{
+    float: right;
+    width: 320px;
+    height: 410px;
+    border-radius: 30px;
+    background-color: rgba(15, 32, 39, 0.3);
+    padding: 20px;
+}
+
+.op{
+    border: 1px solid #686868;
+    background-color: rgba(15, 32, 39, 0.3);;
+    width: 280px;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: larger;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.caixa_img{
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    float: left !important;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.op:hover {
+    color: #cef3f5;
+    border: 1px solid #cef3f5;
+}
+
+.wpp{
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to bottom, #686868, #686868);
+    border-radius: 30px;
+}
+
+.foto{
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: #cef3f5;
+    margin: 70px 20px 0px 30px;
+}
+
+.nome{
+    font-weight: 500;
+    font-size: xx-large;
+    color: white;
+}
+
+.infos{
+    font-size: medium;
+    font-weight: 500;
+    color: white;
+}
+
+.infos2{
+    font-size: medium;
+    font-weight: 500;
+    color: #131726;
+    background-color: white;
+    border-radius: 30px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.publis{
+    width: 60%;
+    margin-left: 30px;
+    float: left;
+}
+
+.botao{
+    background-size: cover;
+    color: #686868;
+    width: 590px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.botao:hover {
+    color: #cef3f5;
+    border: 1px solid #cef3f5;
+}
+
+.botaologo{
+    background-color: rgba(15, 32, 39, 0.3);
+    border: 1px solid rgba(15, 32, 39, 0.3);
+    float: right;
+    margin: 21px 30px 0px 20px;
+}
+
+.caixas_1{
+    float: left;
+    width: 680px;
+    height: 220px;
+    border-radius: 30px;
+    margin: 30px 20px 30px 20px;
+    padding-left: 10px;
+}
+
+.caixas_2{
+    float: right;
+    width: 240px;
+    height: 220px;
+    border-radius: 30px;
+    border: 1px solid #686868;
+    margin: 10px 30px 30px 0px;
+    padding: 20px;
+}
+
+.glyphicon-education{
+    float: left;
+    color: white;
+    font-size: 20px;
+}
+
+.glyphicon-book{
+    float: left;
+    color: white;
+    font-size: 20px;
+}
+
+.glyphicon-tags{
+    float: left;
+    color: white;
+    font-size: 20px;
+}
+
+.glyphicon-plus{
+    float: right;
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}

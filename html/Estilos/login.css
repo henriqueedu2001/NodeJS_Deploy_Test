@@ -1,0 +1,87 @@
+:root{
+    --back_grande: #131726;
+    --back_caixa: rgb(6, 11, 20);
+    --form_color: black;
+    --form_border: #686868;
+    --form_text: #cef3f5;
+    --link_color: rgb(19, 159, 214);
+}
+
+body{
+    background-color:  #131726 !important;
+}
+
+h1{
+    margin-bottom: 70px !important;
+}
+
+form{
+    width: 60%;
+    margin: auto;
+}
+
+form input{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#logo{
+    width: 100px;
+    margin-top: 10px;
+}
+
+#caixa{
+    background-color: rgb(6, 11, 20);
+    border-color: rgb(6, 11, 20);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    width: 700px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#fora{
+    margin: auto;
+}
+
+#entrar{
+    width: 100%;
+    border-radius: 30px;
+}
+
+#esq-senha{
+    width: 60%;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+a:link{
+    color: rgb(19, 159, 214);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(19, 159, 214);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form{
+    height: 70px;
+    background-color: black !important;
+    border-color: #686868 !important;
+    color: #cef3f5 !important;
+}
+
+#form1{
+    margin-bottom: 1px;
+}
+
+#form2{
+    margin-bottom: 70px;
+}

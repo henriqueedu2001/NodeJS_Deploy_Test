@@ -7,17 +7,17 @@ const app = express();
 
 // exibição da página inicial
 app.get("/", function(req, res){
-    res.sendFile(__dirname + "/html/index.html");
+    res.sendFile(__dirname + "/html/login.html");
 });
 
 // conexão com banco de dados
 app.get("/", function(req, res){
     var sql = requeire('mysql');
     var config = {
-        user: 'pegasus_adm',
+        user: 'root',
         password: '#Minecraft123',
-        server: 'polibits-pegasus.database.windows.net',
-        database: 'DB',
+        server: '119.8.153.15',
+        database: 'Scili_DB',
     }
     sql.connect(config, function(err){
         if (err) console.log(err);

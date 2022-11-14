@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Aqui criamos um link para o documento que contém os estilos da página-->
+        <link rel="stylesheet" type="text/css" href="./estilos/login.css">
+        <link rel="icon" type="image/x-icon" href="./Imagens/Logo-Scili.png">
+        <!--Com essa tag meta o navegador entende que os caracteres são do UTF-8 e os acentos n bugam-->
+        <meta charset="UTF-8">
+        <!--Aqui o site funciona direito em celular tbm-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Scili.com</title>
+    </head>
+    <body>
+        <div id="fora" class="text-white text-center">
+            <div id="caixa">
+                <img src="./Imagens/Logo-Scili.png" id="logo">
+                <h1>Seja bem vindo!</h1>
+                <form method="post">
+                    <input type="email" id="form1" class="form-control form" placeholder="Insira seu e-mail">
+                    <input type="password" id="form2" class="form-control form" placeholder="Digite sua senha">
+                </form>
+                <button id="entrar" style="margin-bottom: 2.5%; width: 60%;" class="btn btn-outline-success" onclick="loc()">Entrar</button>
+                <button type="button" id="esq-senha" class="btn btn-outline-secondary">
+                    Esqueceu sua senha?
+                </button>
+                <div style="margin-bottom: 20px;">
+                    Não tem uma conta? (<a href="./tipo_cad.html" target="_self">Cadastre-se</a>)
+                </div>
+            </div>
+        </div>
+        <script>
+            function loc(){
+                window.location.href="./areaCentral.html";
+            }
+        </script>
+    </body>
+</html>
