@@ -7,7 +7,7 @@ const app = express();
 
 // exibição da página inicial
 app.get("/", function(req, res){
-    res.sendFile(__dirname + "/html/login.html");
+    res.sendFile(__dirname + "/html/index.html");
 });
 
 // conexão com banco de dados
